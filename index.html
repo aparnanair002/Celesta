@@ -7,7 +7,26 @@
   </head>
 
 <body>
+  <div class="nightsky">
+
+  </div>
 
 </body>
+<script>
+  function starmaker(cn){
+  const nightsky = document.querySelector('.nightsky');
+  var  stars = [];
+  for(let i=0; i<cn; i++){
+    let n=Math.random()*3 ;
+    stars.push(`${n}px ${n}px at ${Math.random()*100}% ${Math.random()*100}%`);
+  }
 
+  return stars.map(pos => 
+      `radial-gradient(${pos}, white, transparent)`
+  ).join(',');
+}
+document.addEventListener("DOMContentLoaded", function () {
+document.querySelector('.nightsky').style.background= starmaker(80);
+});
+</script>
 </html>

@@ -1,0 +1,14 @@
+body{
+ background:
+    linear-gradient(to bottom, #020111, #191621, #3a2c4f);
+  background-repeat: repeat;
+  height: 100vh;
+  margin: 0;
+}
+.nightsky{ width: 100%; height: 100%;
+    animation: moveStars 800s linear infinite;
+    
+}
+
+@keyframes moveStars {
+   from { background-position: 0 0; } to { background-position: -1000px 1000px; } }
