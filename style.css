@@ -5,10 +5,39 @@ body{
   height: 100vh;
   margin: 0;
 }
-.nightsky{ width: 100%; height: 100%;
-    animation: moveStars 800s linear infinite;
-    
+.nightsky{ 
+  width: 100%; height: 100%;  
+}
+.movestars{
+  animation: moveStars 300s linear infinite;
+}
+.celesta{
+  color:white;
+  font-size: 7em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 100%;
+  will-change: transform, opacity;
+backface-visibility: hidden;
+animation: moveback 5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+@keyframes moveback {
+  from {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.5) translateY(-500px);
+    opacity: 0.98;
+  }
+}
+
+
+
 @keyframes moveStars {
-   from { background-position: 0 0; } to { background-position: -1000px 1000px; } }
+   from { background-position: 0 0; } to { background-position: -1000px 1000px; } 
+  }

@@ -8,6 +8,9 @@
 
 <body>
   <div class="nightsky">
+    <div class="celesta">
+      CELESTA
+    </div>
 
   </div>
 
@@ -26,7 +29,12 @@
   ).join(',');
 }
 document.addEventListener("DOMContentLoaded", function () {
-document.querySelector('.nightsky').style.background= starmaker(80);
+  document.querySelector('.nightsky').style.background= starmaker(80);
+
+setTimeout(()=>{
+  document.querySelector('.nightsky').classList.add('movestars');
+},1000);
 });
+
 </script>
 </html>
