@@ -11,6 +11,7 @@
     <div class="celesta">
       CELESTA
     </div>
+   <div class="box"></div>
 
   </div>
 
@@ -33,7 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 setTimeout(()=>{
   document.querySelector('.nightsky').classList.add('movestars');
+},5000);
+
+setTimeout(()=>{
+  document.querySelector('.celesta').classList.add('addmoveback');
 },1000);
+
 });
 
 </script>
