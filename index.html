@@ -1,46 +1,22 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Celesta- your guide to constellations</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celesta Observatory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
 <body>
-  <div class="nightsky">
-    <div class="celesta">
-      CELESTA
-    </div>
-   <div class="box"></div>
-
+  <div class="stars-layer layer1"></div>
+  <div class="stars-layer layer2"></div>
+  <div class="hud">
+    <div>OBJECT: CELESTA</div>
+    <div>STATUS: ACTIVE</div>
+    <div>COORDINATES: 21.12° N 78.65° E</div>
   </div>
 
+  <h1>CELESTA</h1>
+
 </body>
-<script>
-  function starmaker(cn){
-  const nightsky = document.querySelector('.nightsky');
-  var  stars = [];
-  for(let i=0; i<cn; i++){
-    let n=Math.random()*3 ;
-    stars.push(`${n}px ${n}px at ${Math.random()*100}% ${Math.random()*100}%`);
-  }
-
-  return stars.map(pos => 
-      `radial-gradient(${pos}, white, transparent)`
-  ).join(',');
-}
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector('.nightsky').style.background= starmaker(80);
-
-setTimeout(()=>{
-  document.querySelector('.nightsky').classList.add('movestars');
-},5000);
-
-setTimeout(()=>{
-  document.querySelector('.celesta').classList.add('addmoveback');
-},1000);
-
-});
-
-</script>
 </html>
