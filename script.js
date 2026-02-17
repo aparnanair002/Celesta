@@ -46,4 +46,32 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
+
+//hubble following
+ const hubble = document.querySelector(".hubble");
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  const speed = 0.1;
+
+  document.addEventListener("mousemove", function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+ function animate() {
+  currentX += (mouseX - currentX) * speed;
+  currentY += (mouseY - currentY) * speed;
+
+  hubble.style.left = currentX + "px";
+  hubble.style.top = currentY + "px";
+
+  document.documentElement.style.setProperty('--x', currentX + 'px');
+  document.documentElement.style.setProperty('--y', currentY + 'px');
+
+  requestAnimationFrame(animate);
+}
+animate();
 });
