@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
         audio.play().catch(err => console.log("Autoplay blocked:", err));
         span.textContent = "❚❚";
                 button.nextSibling.textContent = " SOUND ON";
+          const buttons = document.querySelectorAll('.sign');
+           buttons.forEach(btn => btn.style.display = "block");
 
       
       }

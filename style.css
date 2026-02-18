@@ -66,17 +66,7 @@ background: radial-gradient(circle at center,
 );
 backdrop-filter: contrast(1.5) brightness(100) saturate(2);
 }
-.zoom-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
 
-  transform: scale(1.6);
-  transform-origin: var(--x) var(--y);
-
-  clip-path: circle(90px at var(--x) var(--y));
-}
 
 h1 {
   position: relative;
@@ -99,4 +89,67 @@ body::after {
   );
   pointer-events: none;
   z-index: 1;
+}
+.sign {
+  position: absolute;
+  top:50%;
+  padding: 20px 40px;
+  background: transparent;
+  border: 1px solid #00ffcc;
+  border-radius: 30px;
+  color: #00ffcc;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+  animation: shadowWave 5s ease-in-out infinite;
+
+}
+.in {
+  left:53%;
+}
+ .up{
+  left:37%;
+}
+
+.buttons{
+    display: none;
+}
+
+.sign:hover {
+  animation: shadowWave 1s ease-in-out infinite;
+}
+
+
+
+@keyframes shadowWave {
+  0% {
+    box-shadow: 0 0 5px #00ffcc,
+                0 0 10px #00ffcc,
+                0 0 20px #00ffcc;
+  }
+
+  75% {
+    box-shadow: 0 0 10px #00ffcc,
+                0 0 15px #00ffcc,
+                0 0 25px #00ffcc;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #00ffcc,
+                0 0 25px #00ffcc,
+                0 0 40px #00ffcc;
+  }
+
+  75% {
+    box-shadow: 0 0 10px #00ffcc,
+                0 0 15px #00ffcc,
+                0 0 25px #00ffcc;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #00ffcc,
+                0 0 10px #00ffcc,
+                0 0 20px #00ffcc;
+  }
 }
