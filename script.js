@@ -77,3 +77,28 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 animate();
 });
+
+//all sign in sign up stuff
+const popup = document.querySelector(".popup");
+const signin=document.getElementById("sign-in");
+const signup=document.getElementById("sign-up");
+
+signin.addEventListener("click", function() {
+  popup.classList.add("open");
+  document.querySelector(".popup-signin").style.display = "block";
+  document.querySelector(".popup-signup").style.display = "none";
+});
+
+signup.addEventListener("click", function() {
+  popup.classList.add("open");
+  document.querySelector(".popup-signin").style.display = "none";
+  document.querySelector(".popup-signup").style.display = "block";
+});
+
+document.getElementById('close').addEventListener("click", function() {
+  popup.classList.remove("open");
+});
+
+document.getElementById('submit').addEventListener("click", function() {
+window.location.href = "./galaxies.html";
+});
