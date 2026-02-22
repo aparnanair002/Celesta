@@ -2,7 +2,7 @@ function generateStars(container, count) {
   let stars = [];
 
   for (let i = 0; i < count; i++) {
-    const size = Math.random() *3  + 0.3;
+    const size = Math.random() *3.2  + 0.3;
     const opacity = Math.random() * 0.8 + 0.2;
     const x = Math.random() * 100;
     const y = Math.random() * 100;
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const layer1 = document.querySelector(".layer1");
   const layer2 = document.querySelector(".layer2");
   generateStars(layer1, 150);  
-  generateStars(layer2, 60);  
+  generateStars(layer2, 100);  
 
   const audio = document.getElementById("myAudio");
   const button = document.querySelector(".soundstatus button");
