@@ -29,8 +29,8 @@ body {
   height: 3px;
 
   background:
-    radial-gradient(circle at left center, white 1.2px, transparent 2px),
-    linear-gradient(to right, white, transparent);
+    radial-gradient(circle at left center, white 2px, transparent 5px),
+    linear-gradient(to right, rgb(255, 232, 232), transparent);
 
   background-repeat: no-repeat;
   animation: shower 1s linear forwards;

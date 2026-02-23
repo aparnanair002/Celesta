@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const sky = document.querySelector(".nightsky");
 
 function createMeteor() {
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 5; i++) {
   const meteor = document.createElement("div");
   meteor.classList.add("meteorshower");
 
