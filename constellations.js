@@ -22,12 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         '🎨', '🐟🐟', '🐟', '🚢', '🧭', '🕸️', '🏹', '🏹', '🦂', 
         '🗿', '🛡️', '🐍', '📐', '🐂', '🔭', '🔺', '🔺', '🐦', 
         '🐻', '🐻', '⛵', '👩', '🐟', '🦊']
-    for(let i=0; i<88; i++){
-        const row = document.createElement('div');
-        row.classList.add('row');
-        
-        row.innerHTML = '<b>'+(i+1)+')    '+represesntations[i]+'  '+constellations[i] +' </b>';
-
-        constels.appendChild(row);
-    }
-    });
+                        for(let i=0; i<88; i++){
+                            const row = document.createElement('div');
+                            row.classList.add('row');
+                            
+                            row.innerHTML = '<b>'+(i+1)+')  '+represesntations[i]+'  '+constellations[i] +' </b>';
+                            constels.appendChild(row);
+                        }
+                        });
