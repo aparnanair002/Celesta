@@ -126,6 +126,32 @@ h2{
     width: 100%;
 }
 
+.popup-of-constellations{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 130%;
+    background:linear-gradient(to bottom, #000000, #1a1a2e, #16213e);
+    backdrop-filter: brightness(2.2);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius:50px;
+    z-index: 10;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 @keyframes shower {
 0% {
     transform: translate(0, 0) rotate(-45deg);
