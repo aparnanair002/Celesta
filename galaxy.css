@@ -131,8 +131,8 @@ h2{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 130%;
+    width: 60%;
+    height: 100%;
     background:linear-gradient(to bottom, #000000, #1a1a2e, #16213e);
     backdrop-filter: brightness(2.2);
     align-items: center;
@@ -147,7 +147,7 @@ h2{
 
 .image{
     width: 100%;
-    height: 50%;
+    height: 80%;
     color:white;
     border-radius: 20px;
     
@@ -155,7 +155,7 @@ h2{
 
 .parag{
     width: 100%;
-    height: 50%;
+    height: 80%;
     color:white;
     overflow-y: auto;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
