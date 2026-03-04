@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   images_hh = [
     "andromeda.png",
     "antlia.png",
+    "apus.png",
     "aquarius.png",
     "aqua.png",
     "aquila.png",
